@@ -2,7 +2,7 @@
 pragma solidity 0.8.20;
 
 contract Vault {
-    address private owner;
+    address public owner;
 
     uint id;
     mapping(address => mapping(uint => Beneficiary)) private receiver; // Corrected syntax
